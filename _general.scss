@@ -1,0 +1,37 @@
+$kurale: 'Kurale', serif;//bukvi
+$OS: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$oswald: 'oswald', sans-serif;
+
+$white: white;
+$pink: pink;
+$red: #CF404D;
+$color: black;
+$color_side: #2D3E4F;
+$text: 18px;
+$wrap: 1470px;
+$container: 1200;
+$mc: 0 auto;
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+body {
+    background: $white;
+    font-family: $OS;
+    color: $color;
+    font-size: $text;
+}
+.wrapper {
+max-width: $wrap;
+margin: $mc;
+padding: 0 15px;
+}
+.container {
+    max-width: $container;
+    margin: $mc;
+}
+
