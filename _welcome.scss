@@ -9,7 +9,7 @@
     min-height: 800px;
     position: relative;
     outline: 1px solid blue;
-    &__img {
+    &__video {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -31,15 +31,50 @@
     margin: 0 5px;
     a {
         text-transform: uppercase;
-        color: $white;
-        font-size: 12px;
+        color: $black;
+        font-size: 13px;
         font-weight: 700;
-        display: block; 
-        padding: 304px 146px;
+        display: flex; 
+        padding: 40px 50px;
         transition: 0.04s;
+        border-top: 5px solid transparent;
         &:hover {
-            color: $red;
-            border-top: 5px solid $red;
+            color: $gold;
+            border-top: 5px solid $gold;
         }
+    }
+}
+.logo {
+    @include flex(space-between, flex-start);
+    margin-top: relative 305px;
+    margin: 245px;
+    display: flex;
+    
+}
+.socials {
+    width: 67px;
+    a {
+        display: block;
+        height: 14px;
+        border-radius: 50%;
+        transition: 0.03s;
+        margin-bottom: 7px;
+        &:hover {
+            background: $red;
+        }
+    }
+}
+.home__text {
+    text-align: center;
+    h6 {
+        color: $white;
+        font-size: $text;
+    }
+    h1 {
+        color: $yellow;
+        font-family: $kurale;
+        font-weight: normal;
+        font-size: 72px;
+        margin-top: 75px;
     }
 }

@@ -6,7 +6,8 @@ $oswald: 'oswald', sans-serif;
 $white: white;
 $pink: pink;
 $red: #CF404D;
-$color: black;
+$gold: #FFD700;
+$black: #000;
 $color_side: #2D3E4F;
 $text: 18px;
 $wrap: 1470px;
@@ -22,7 +23,7 @@ $mc: 0 auto;
 body {
     background: $white;
     font-family: $OS;
-    color: $color;
+    color: $black;
     font-size: $text;
 }
 .wrapper {
@@ -33,5 +34,10 @@ padding: 0 15px;
 .container {
     max-width: $container;
     margin: $mc;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
 }
 
